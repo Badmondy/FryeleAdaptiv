@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+/* Sträcker backgrundsbilden över hela skärmen*/
+html { 
+    background: url(/picture/horsebackground.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    user-select: none;
+    font-family: 'Titillium Web', sans-serif;
+
+  }
+h2{
+    margin:0;
+}
+/* Meny omslutare(wrapper)*/
+  .navwrapper{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom:10%;
+  }
+/* Bas för meny knappar!*/
+  .home,.community,.school,.property,.contact{
+    background-color:#FBBE85;
+    border-radius:.3rem;
+    height:10%;
+    min-width:10%;
+    margin-left:1%;
+    margin-top:1%;
+  }
+/* Meny knappar hover*/
+  .home:hover,.community:hover,.school:hover,.property:hover,.contact:hover{
+    background-color: #FAE3C1;
+  }
+  .drop-down-community,.drop-down-school{
+    display:none;
+    flex-direction: column;
+  }
+
+/* Meny funktion dropdown*/
+  .drop-down-community > p:first-of-type,.drop-down-school > p:first-of-type{
+    margin:0;
+    padding:1rem;
+    background-color:#FAE3C1;
+  }
+  .drop-down-community > p:hover,.drop-down-school > p:hover{
+    margin:0;
+    padding:1rem;
+    background-color:#b46923;
+  }
+
+/* Meny funktion dropdown hover*/
+  .community:hover .drop-down-community,.school:hover .drop-down-school{
+    display:flex;
+    
+  }
+
+
+
+  /*Nyheter wrapper*/
+.newsWrapper{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+    width:100%;
+}
+   /*Nyheter föremål*/
+.newsitem1,.newsitem2,.newsitem3{
+    border:solid 2px rgb(248, 248, 248);
+    margin-bottom:0.5%;
+    width:60%;
+    background:#FAE3C1;
+    
+
+}
+
+
+
